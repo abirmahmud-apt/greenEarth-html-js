@@ -68,120 +68,16 @@
         <!-- category filter section -->
         <div class="filters basis-1/6">
           <h3 class="text-lg font-semibold mb-4">Categories</h3>
-          <div class="space-y-2">
-            <button
-              class="bg-green-700 text-white pl-2 py-1 w-[200px] text-start rounded text-sm"
-            >
-              All Trees
-            </button>
-            <button
-              class="text-green-700 pl-2 py-1 w-[200px] text-start rounded text-sm"
-            >
-              All Trees
-            </button>
-            <button
-              class="text-green-700 pl-2 py-1 w-[200px] text-start rounded text-sm"
-            >
-              All Trees
-            </button>
-            <button
-              class="text-green-700 pl-2 py-1 w-[200px] text-start rounded text-sm"
-            >
-              All Trees
-            </button>
-            <button
-              class="text-green-700 pl-2 py-1 w-[200px] text-start rounded text-sm"
-            >
-              All Trees
-            </button>
+          <div class="space-y-2" id="categoryList">
+           <!-- the category buttons come here from js file -->
           </div>
         </div>
         <!-- products section -->
-        <div class="products basis-4/6 flex flex-wrap justify-center gap-3">
-          <!-- Single product -->
-          <div
-            class="product bg-white p-3 rounded shadow-sm mb-4 md:max-w-[235px] sm:w-full"
-          >
-            <div class="">
-              <img src="./assets/tree.jpg" alt="" />
-            </div>
-            <h4 class="font-semibold mt-2">Mango Tree</h4>
-            <h6 class="text-gray-700 mb-2">
-              A fast-growing tropical tree that produces delicious,
-            </h6>
-            <div class="flex justify-between items-center my-2">
-              <div
-                class="text-sm bg-green-100 text-green-700 rounded-full px-2 py-1"
-              >
-                Fruit Tree
-              </div>
-              <div class="price">
-                <span><i class="fa-solid fa-bangladeshi-taka-sign"></i></span
-                >500
-              </div>
-            </div>
-            <button
-              class="bg-green-700 text-white w-full px-5 py-2 rounded-full text-sm hover:bg-green-800 transition-colors mt-2"
-            >
-              Add to Cart
-            </button>
-          </div>
-          <!-- Single product -->
-          <div
-            class="product bg-white p-3 rounded shadow-sm mb-4 md:max-w-[235px] sm:w-full"
-          >
-            <div class="">
-              <img src="./assets/tree.jpg" alt="" />
-            </div>
-            <h4 class="font-semibold mt-2">Mango Tree</h4>
-            <h6 class="text-gray-700 mb-2">
-              A fast-growing tropical tree that produces delicious,
-            </h6>
-            <div class="flex justify-between items-center my-2">
-              <div
-                class="text-sm bg-green-100 text-green-700 rounded-full px-2 py-1"
-              >
-                Fruit Tree
-              </div>
-              <div class="price">
-                <span><i class="fa-solid fa-bangladeshi-taka-sign"></i></span
-                >500
-              </div>
-            </div>
-            <button
-              class="bg-green-700 text-white w-full px-5 py-2 rounded-full text-sm hover:bg-green-800 transition-colors mt-2"
-            >
-              Add to Cart
-            </button>
-          </div>
-          <!-- Single product -->
-          <div
-            class="product bg-white p-3 rounded shadow-sm mb-4 md:max-w-[235px] sm:w-full"
-          >
-            <div class="">
-              <img src="./assets/tree.jpg" alt="" />
-            </div>
-            <h4 class="font-semibold mt-2">Mango Tree</h4>
-            <h6 class="text-gray-700 mb-2">
-              A fast-growing tropical tree that produces delicious,
-            </h6>
-            <div class="flex justify-between items-center my-2">
-              <div
-                class="text-sm bg-green-100 text-green-700 rounded-full px-2 py-1"
-              >
-                Fruit Tree
-              </div>
-              <div class="price">
-                <span><i class="fa-solid fa-bangladeshi-taka-sign"></i></span
-                >500
-              </div>
-            </div>
-            <button
-              class="bg-green-700 text-white w-full px-5 py-2 rounded-full text-sm hover:bg-green-800 transition-colors mt-2"
-            >
-              Add to Cart
-            </button>
-          </div>
+        <div class="products basis-4/6 flex flex-wrap justify-center gap-3" id="productList">
+          
+          <!-- product will add here from js file -->
+          
+
         </div>
 
         <!-- cart section -->
@@ -238,7 +134,7 @@
     </div>
 
     <!-- about section -->
-    <div class="w-[1170px] mx-auto p-8">
+    <div class="md:w-[1170px] sm:full mx-auto p-8">
       <h2 class="text-3xl font-semibold text-center mb-3">
         About the Campaign
       </h2>
@@ -248,7 +144,7 @@
         <div class="w-[300px] h-auto">
           <img src="./assets/about.png" alt="" />
         </div>
-        <div class="space-y-2 w-[40%]">
+        <div class="space-y-2 md:w-[40%] sm:w-full">
           <h5 class="text-md text-gray-500">
             Green Earth is a global tree plantation initiative dedicated to
             fighting climate change. Since our start, we’ve planted over 500,000
@@ -289,7 +185,7 @@
     <div class="py-9 bg-green-800">
       <h2 class="text-white text-3xl text-center mb-5">Plant a Tree Today</h2>
       <div
-        class="w-[40%] bg-green-700 p-6 mx-auto rounded text-white text-center space-y-4"
+        class="md:w-[40%] sm:w-[95%] bg-green-700 p-6 mx-auto rounded text-white text-center space-y-4"
       >
         <input
           type="text"
@@ -315,6 +211,11 @@
     </div>
 
     <!-- footer -->
-     <div class="text-center text-white bg-green-900 p-4 text-sm text-gray-700">© 2025 Green Earth. All Rights Reserved.</div>
+    <div class="text-center text-white bg-green-900 p-4 text-sm text-gray-700">
+      © 2025 Green Earth. All Rights Reserved.
+    </div>
+
+    <!-- linkUp external js file -->
+    <script src="./index.js"></script>
   </body>
 </html>
